@@ -1,16 +1,19 @@
 import React from 'react';
+import posed from 'react-pose';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import { Title, Copy } from './item.css';
 
-const Item = ({ title, copy, image }) => (
-  <figure>
-    <Img fluid={image ? image.childImageSharp.fluid : {}} alt={title} />
-    <figcaption>
-      <Title>{title}</Title>
-      <Copy>{copy}</Copy>
-    </figcaption>
-  </figure>
+const DraggableImage = posed.div({
+  draggable: true,
+});
+
+const Item = ({ title, image }) => (
+  <DraggableImage>
+    <figure>
+      <Img fluid={image ? image.childImageSharp.fluid : {}} alt={title} />
+    </figure>
+  </DraggableImage>
 );
 
 Item.propTypes = {

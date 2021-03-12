@@ -44,4 +44,5 @@ export const Close = styled.button`
   top: 0;
   right: 0;
   color: #fff;
+  z-index: 5;
 `;

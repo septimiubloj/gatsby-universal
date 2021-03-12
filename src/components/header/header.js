@@ -9,16 +9,10 @@ import Nav from 'components/header/nav';
 // Example of a component-specific page transition
 const AnimatedContainer = posed.div({
   enter: {
-    y: 0,
-    transition: {
-      ease: 'easeInOut',
-    },
+    transition: { type: 'spring', stiffness: 100 }
   },
   exit: {
-    y: '-100%',
-    transition: {
-      ease: 'easeInOut',
-    },
+    transition: { type: 'spring', stiffness: 100 }
   },
 });
 

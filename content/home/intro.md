@@ -1,1 +1,1 @@
-An opinionated starter for using Gatsby v2 with React Context, tag-agnostic styled-components, page transitions and scroll events with IntersectionObserver.
+Full-stack engineer with 6+ years experience, specializing in front-end development for the art, design, & creative media community.
