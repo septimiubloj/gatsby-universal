@@ -9,6 +9,9 @@ const Nav = () => (
         <Link to="/about">About</Link>
       </li>
       <li>
+        <Link to="/posts">Posts</Link>
+      </li>
+      <li>
         <a href="https://github.com/septimiubloj">GitHub</a>
       </li>
     </ul>
